@@ -7,11 +7,9 @@
 #header {
   height: 4.5rem;
   width: 100%;
-  transition: height 0.3s;
   position: fixed;
   z-index: 1000;
-  /* 	backdrop-filter: blur(6px); */
-  transition: opacity 0.5s;
+  transition: opacity 1s, height 0.3s;
 }
 
 #header.active {
@@ -1115,6 +1113,7 @@ footer {
       cover;
   }
 }
+
 @media (width <= 1270px) {
   .kits-left-text h2 {
     font-size: 3.2rem;

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+
+    <!-- 공통 JS 연결-->
+    <script defer src="script/login.js"></script>
+
+    <!-- 폰트 적용 -->
+    <link rel="stylesheet" href="style/font.css" />
+
+    <!-- css 연결 -->
+    <link rel="stylesheet" href="style/loginstyle.css" />
+
+    <!-- JQ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- 테일윈드 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- 폰트어썸 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="login-wrap">
+      <header>
+        <div id="header" class="header-box">
+          <div class="header-wrap">
+            <div class="header-con mx-auto">
+              <h1 class="logo-box">
+                <a href="./index.html">
+                  <img src="./images/klogo.png" alt="logo"
+                /></a>
+              </h1>
+              <nav class="nav">
+                <ul class="nav-box">
+                  <li>
+                    <a href="./prdshop.html"> SHOP </a>
+                    <div class="nav-dept2">
+                      <ul>
+                        <li>
+                          <a href="./prdshop.html"> ALL </a>
+                        </li>
+                        <li>
+                          <a href="./prdshop.html"> Premier League </a>
+                        </li>
+                        <li>
+                          <a href="./prdshop.html"> LALIGA </a>
+                        </li>
+                        <li>
+                          <a href="./prdshop.html"> Bundesliga </a>
+                        </li>
+                        <li>
+                          <a href="./prdshop.html"> Serie A </a>
+                        </li>
+                        <li>
+                          <a href="./prdshop.html"> Ligue 1 </a>
+                        </li>
+                        <li>
+                          <a href="./prdshop.html"> International </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="./collection.html"> COLLECTION </a>
+                    <div class="nav-dept2">
+                      <ul>
+                        <li>
+                          <a href="./collection.html"> COLLECTION </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#"> EURO2024 </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header-side-box">
+                <div class="header-mypage">
+                  <a href="#">
+                    <i class="fa-regular fa-user"></i>
+                  </a>
+                </div>
+                <div class="header-mybag">
+                  <a href="#">
+                    <i class="fa-regular fa-bag-shopping"></i>
+                  </a>
+                </div>
+                <div class="header-sidemenu-bar">
+                  <i class="fa-regular fa-bars side-bar"></i>
+                  <i class="fa-solid fa-xmark side-close"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-sidemenu">
+          <div class="header-sidemenu-con">
+            <div class="header-sidemenu-content">
+              <ul class="side-content">
+                <li>
+                  <a href="#"> SHOP </a>
+                  <ul>
+                    <li>
+                      <a href="#"> ALL </a>
+                    </li>
+                    <li>
+                      <a href="#"> Premier League </a>
+                    </li>
+                    <li>
+                      <a href="#"> LALIGA </a>
+                    </li>
+                    <li>
+                      <a href="#"> Bundesliga </a>
+                    </li>
+                    <li>
+                      <a href="#"> Serie A </a>
+                    </li>
+                    <li>
+                      <a href="#"> Ligue 1 </a>
+                    </li>
+                    <li>
+                      <a href="#"> International </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"> COLLECTION </a>
+                  <ul>
+                    <li>
+                      <a href="#"> COLLECTION </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"> EURO2024 </a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-sidemenu-img"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="login-con">
+        <div class="login-area">
+          <h2 class="login-title">로그인</h2>
+          <div class="login-idpw">
+            <input type="text" name="id" id="id" placeholder="아이디" />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="비밀번호"
+            />
+          </div>
+          <div class="login-btn">
+            <a href="#">로그인</a>
+          </div>
+          <div class="login-info">
+            <ul>
+              <li>
+                <a href="#"> 아이디 찾기 </a>
+              </li>
+              <li>
+                <a href="#"> 비밀번호 찾기 </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="login-btn-kakao">
+            <a href="#">
+              <img
+                src="images/icons8-카카오-톡.svg"
+                alt="카카오톡아이콘"
+              />카카오 로그인</a
+            >
+          </div>
+
+          <div class="login-btn-naver">
+            <a href="#">
+              <img src="images/icons8-엔-50.png" alt="네이버아이콘" />
+              네이버 로그인</a
+            >
+          </div>
+
+          <div class="login-btn-apple">
+            <a href="#">
+              <img src="images/icons8-맥-os-48.png" alt="애플아이콘" />
+              Apple 로그인</a
+            >
+          </div>
+          <div class="login-join">
+            <a href="#"> 회원가입 </a>
+          </div>
+          <div class="login-info-banner-box">
+            <a href="">23/24 CHAMPIONS WINNER UNIFORM VIEW</a>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-con">
+          <div class="footer-logo">
+            <img src="./images/klogo.png" alt="로고" />
+          </div>
+          <div class="footer-contact footer-contact-01">
+            <p>EVERY UNIFORM㈜</p>
+            <p>대표: 이종철</p>
+            <p>TEL : 010-9532-3239</p>
+            <p>E-mail : dlwhdcjf15@naver.com</p>
+          </div>
+          <div class="footer-contact footer-contact-02">
+            <p>주소: 경기도 시흥시 거모동 1764-4</p>
+          </div>
+          <div class="footer-copyright">
+            © 2024 THE EVERY UNIFORM COMPANY. ALL RIGHTS RESERVED.
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
