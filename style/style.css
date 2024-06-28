@@ -830,6 +830,7 @@ html.header-side-box-actived > body {
   flex-direction: column;
   height: 100%;
   padding: 1rem;
+  overflow: hidden;
   gap: 0.3rem;
 }
 
